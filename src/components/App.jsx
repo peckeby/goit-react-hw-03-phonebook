@@ -32,7 +32,6 @@ export class App extends Component {
   }
 
   fiterChange = (contacts, filter) => {
-    console.log(filter);
     const newContacts = contacts.filter(contact => {
       return contact.name.toLowerCase().includes(filter.toLowerCase());
     });
